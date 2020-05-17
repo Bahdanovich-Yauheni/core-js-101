@@ -32,10 +32,8 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return /\{[a-fA-F/\d]{8}-[a-fA-F/\d]{4}-[a-fA-F/\d]{4}-[a-fA-F/\d]{4}-[a-fA-F/\d]{12}\}/i;
 }
-
-
 /**
  * Returns the regexp that matches all the strings from first column
  * but of them from the second
