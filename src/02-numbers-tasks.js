@@ -237,10 +237,11 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
-
-  // return ;
+function toNumber(value, def) {
+  if ((Number(value)) && (typeof Number(value) === 'number')) {
+    return Number(value);
+  }
+  return def;
 }
 
 // function isString(value) {
